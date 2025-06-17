@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin-top: 10px;
+}
+.flex {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.item {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.item img:hover {
+  transform: scale(1.1);
+}
